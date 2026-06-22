@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permission Request | Hostel Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div>
+            <h1>Hostel Management System</h1>
+            <p>Smart Complaint, Permission & Maintenance Portal</p>
+        </div>
+
+        <div id="dateTimeContainer">
+            <!-- Live Date & Time -->
+        </div>
+
+    </header>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="raise-complaint.html">Raise Complaint</a>
+
+        <a href="track-complaints.html">Track Complaint</a>
+
+        <a href="permission-request.html">Permission Request</a>
+
+        <a href="notice-board.html">Notice Board</a>
+
+        <a href="about-hostel.html">About Hostel</a>
+
+        <a href="admin-login.html">Admin Login</a>
+
+    </nav>
+
+    <!-- PAGE TITLE -->
+
+    <section>
+
+        <h2>Permission Request Portal</h2>
+
+        <p>
+            Submit requests for late entry, emergency leave, weekend leave, or other hostel-related permissions.
+        </p>
+
+    </section>
+
+    <!-- STUDENT INFORMATION -->
+
+    <section>
+
+        <h2>Student Information</h2>
+
+        <form id="permissionForm">
+
+            <label for="studentName">
+                Student Name
+            </label>
+
+            <input type="text" id="studentName" required>
+
+            <label for="registerNumber">
+                Register Number
+            </label>
+
+            <input type="text" id="registerNumber" required>
+
+            <label for="roomNumber">
+                Room Number
+            </label>
+
+            <input type="text" id="roomNumber" required>
+
+            <label for="phoneNumber">
+                Phone Number
+            </label>
+
+            <input type="tel" id="phoneNumber" required>
+
+    </section>
+
+    <!-- REQUEST DETAILS -->
+
+    <section>
+
+        <h2>Permission Details</h2>
+
+        <label for="permissionType">
+                Permission Type
+            </label>
+
+        <select id="permissionType" required>
+
+                <option value="">
+                    Select Permission Type
+                </option>
+
+                <option>Late Entry Permission</option>
+
+                <option>Emergency Leave</option>
+
+                <option>Weekend Leave</option>
+
+                <option>Academic Permission</option>
+
+                <option>Medical Permission</option>
+
+                <option>Personal Permission</option>
+
+            </select>
+
+        <label for="requestDate">
+                Request Date
+            </label>
+
+        <input type="date" id="requestDate" required>
+
+        <label for="departureDate">
+                Departure Date
+            </label>
+
+        <input type="date" id="departureDate" required>
+
+        <label for="returnDate">
+                Expected Return Date
+            </label>
+
+        <input type="date" id="returnDate" required>
+
+        <label for="returnTime">
+                Expected Return Time
+            </label>
+
+        <input type="time" id="returnTime" required>
+
+        <label for="reason">
+                Reason For Request
+            </label>
+
+        <textarea id="reason" rows="8" required></textarea>
+
+    </section>
+
+    <!-- SUPPORTING DOCUMENTS -->
+
+    <section>
+
+        <h2>Supporting Documents</h2>
+
+        <p>
+            Upload any supporting documents if required.
+        </p>
+
+        <input type="file" id="supportingDocument">
+
+    </section>
+
+    <!-- IMPORTANT GUIDELINES -->
+
+    <section>
+
+        <h2>Permission Guidelines</h2>
+
+        <ul>
+
+            <li>Submit requests before hostel gate closing time.</li>
+
+            <li>Provide accurate return information.</li>
+
+            <li>Emergency requests should include proper details.</li>
+
+            <li>All requests are reviewed by hostel administration.</li>
+
+        </ul>
+
+    </section>
+
+    <!-- ACTION BUTTONS -->
+
+    <section>
+
+        <button type="submit">
+                Submit Request
+            </button>
+
+        <button type="reset">
+                Clear Form
+            </button>
+
+        <a href="index.html">
+
+            <button type="button">
+                    Back To Home
+                </button>
+
+        </a>
+
+        </form>
+
+    </section>
+
+    <!-- REQUEST STATUS -->
+
+    <section>
+
+        <h2>Permission Status</h2>
+
+        <div id="permissionStatusContainer">
+
+            <!-- Dynamic Permission Status -->
+
+        </div>
+
+    </section>
+
+    <!-- REQUEST HISTORY -->
+
+    <section>
+
+        <h2>Permission Request History</h2>
+
+        <div id="permissionHistoryContainer">
+
+            <!-- Dynamic Request History -->
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Hostel Management System
+        </p>
+
+        <p>
+            Smart Complaint, Permission & Maintenance Portal
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+/* ===========================
+   HOSTEL MANAGEMENT SYSTEM
+   COMPLETE STYLE SHEET
+=========================== */
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* HEADER */
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 15px;
+}
+
+#dateTimeContainer {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+}
+
+
+/* HERO SECTION */
+
+#heroSection {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient( rgba(15, 23, 42, 0.8), rgba(30, 58, 138, 0.8));
+    color: white;
+    padding: 50px;
+}
+
+#heroContent {
+    max-width: 900px;
+}
+
+#heroContent h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#heroContent p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#heroButtons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* SECTIONS */
+
+section {
+    background: white;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #0f172a;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* FORMS */
+
+form {
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    background: white;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* BUTTONS */
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+
+/* QUICK SERVICES */
+
+#quickServices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+#quickServices a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#quickServices div {
+    background: #f8fafc;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #2563eb;
+    transition: 0.3s;
+}
+
+#quickServices div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* CATEGORY CONTAINER */
+
+#categoryContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+#categoryContainer div {
+    background: #e2e8f0;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+
+/* RESOLUTION FLOW */
+
+#resolutionFlow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+#resolutionFlow div {
+    background: #dbeafe;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* EMERGENCY */
+
+#emergencyContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+#emergencyContainer div {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+/* NOTICE CONTAINERS */
+
+#latestNotices,
+#recentNoticeContainer,
+#maintenanceNoticeContainer,
+#messNoticeContainer,
+#sportsEventContainer,
+#allNoticesContainer,
+#noticeDetailsContainer,
+#emergencyNoticeContainer {
+    min-height: 120px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* TRACKING PAGE */
+
+#complaintDetailsContainer,
+#statusTrackerContainer,
+#currentStatusContainer,
+#resolutionDeadlineContainer,
+#countdownContainer,
+#adminRemarksContainer,
+#complaintHistoryContainer {
+    min-height: 120px;
+    border: 2px dashed #cbd5e1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* PERMISSION PAGE */
+
+#permissionStatusContainer,
+#permissionHistoryContainer {
+    min-height: 120px;
+    border: 2px dashed #cbd5e1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* ADMIN LOGIN */
+
+#loginStatusContainer {
+    min-height: 100px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* ADMIN DASHBOARD */
+
+#dashboardStatistics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+#dashboardStatistics div {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#totalComplaintsCard {
+    border-top: 5px solid #2563eb;
+}
+
+#pendingComplaintsCard {
+    border-top: 5px solid #f59e0b;
+}
+
+#resolvedComplaintsCard {
+    border-top: 5px solid #16a34a;
+}
+
+#emergencyComplaintsCard {
+    border-top: 5px solid #dc2626;
+}
+
+#totalComplaints,
+#pendingComplaints,
+#resolvedComplaints,
+#emergencyComplaints {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* ADMIN CONTAINERS */
+
+#emergencyComplaintContainer,
+#complaintManagementContainer,
+#permissionRequestContainer,
+#publishedNoticeContainer,
+#activityLogContainer {
+    min-height: 150px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* SEARCH BOX */
+
+#adminSearchInput,
+#noticeSearch,
+#complaintSearchId {
+    width: 100%;
+}
+
+
+/* LISTS */
+
+ul,
+ol {
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+/* TABLES */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table th {
+    background: #1e293b;
+    color: white;
+}
+
+table th,
+table td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:992px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    #dateTimeContainer {
+        text-align: center;
+    }
+    #heroContent h2 {
+        font-size: 35px;
+    }
+}
+
+@media(max-width:768px) {
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+    section {
+        margin: 15px;
+        padding: 20px;
+    }
+    #heroContent h2 {
+        font-size: 28px;
+    }
+    #heroContent p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    button {
+        width: 100%;
+    }
+    #heroButtons {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Admin Dashboard | Hostel Management System
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div>
+
+            <h1>
+                Hostel Management System
+            </h1>
+
+            <p>
+                Smart Complaint, Permission & Maintenance Portal
+            </p>
+
+        </div>
+
+        <div id="dateTimeContainer">
+
+            <!-- Live Date & Time -->
+
+        </div>
+
+    </header>
+
+    <!-- ADMIN DASHBOARD TITLE -->
+
+    <section>
+
+        <h2>
+            Administrator Dashboard
+        </h2>
+
+        <p>
+
+            Centralized control panel for complaint, permission and notice management.
+
+        </p>
+
+    </section>
+
+    <!-- DASHBOARD STATISTICS -->
+
+    <section>
+
+        <h2>
+            Dashboard Overview
+        </h2>
+
+        <div id="dashboardStatistics">
+
+            <div id="totalComplaintsCard">
+
+                <h3>
+                    Total Complaints
+                </h3>
+
+                <div id="totalComplaints">
+
+                </div>
+
+            </div>
+
+            <div id="pendingComplaintsCard">
+
+                <h3>
+                    Pending Complaints
+                </h3>
+
+                <div id="pendingComplaints">
+
+                </div>
+
+            </div>
+
+            <div id="resolvedComplaintsCard">
+
+                <h3>
+                    Resolved Complaints
+                </h3>
+
+                <div id="resolvedComplaints">
+
+                </div>
+
+            </div>
+
+            <div id="emergencyComplaintsCard">
+
+                <h3>
+                    Emergency Complaints
+                </h3>
+
+                <div id="emergencyComplaints">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SEARCH SECTION -->
+
+    <section>
+
+        <h2>
+            Search Records
+        </h2>
+
+        <input type="text" id="adminSearchInput" placeholder="Search Complaint, Student or Permission">
+
+        <button id="adminSearchButton">
+
+            Search
+
+        </button>
+
+    </section>
+
+    <!-- EMERGENCY COMPLAINTS -->
+
+    <section>
+
+        <h2>
+            Emergency Complaints
+        </h2>
+
+        <div id="emergencyComplaintContainer">
+
+            <!-- Dynamic Emergency Complaints -->
+
+        </div>
+
+    </section>
+
+    <!-- COMPLAINT MANAGEMENT -->
+
+    <section>
+
+        <h2>
+            Complaint Management
+        </h2>
+
+        <div id="complaintManagementContainer">
+
+            <!-- Dynamic Complaint Records -->
+
+        </div>
+
+    </section>
+
+    <!-- STATUS UPDATE SECTION -->
+
+    <section>
+
+        <h2>
+            Complaint Status Update
+        </h2>
+
+        <form id="statusUpdateForm">
+
+            <label>
+
+                Complaint ID
+
+            </label>
+
+            <input type="text" id="statusComplaintId">
+
+            <label>
+
+                New Status
+
+            </label>
+
+            <select id="statusSelection">
+
+                <option value="">
+                    Select Status
+                </option>
+
+                <option>
+                    Submitted
+                </option>
+
+                <option>
+                    Under Review
+                </option>
+
+                <option>
+                    Assigned
+                </option>
+
+                <option>
+                    Resolved
+                </option>
+
+                <option>
+                    Closed
+                </option>
+
+            </select>
+
+            <label>
+
+                Admin Remarks
+
+            </label>
+
+            <textarea id="adminRemarks" rows="5"></textarea>
+
+            <button type="submit">
+
+                Update Status
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- PERMISSION MANAGEMENT -->
+
+    <section>
+
+        <h2>
+            Permission Requests
+        </h2>
+
+        <div id="permissionRequestContainer">
+
+            <!-- Dynamic Permission Requests -->
+
+        </div>
+
+    </section>
+
+    <!-- PERMISSION ACTIONS -->
+
+    <section>
+
+        <h2>
+            Permission Approval
+        </h2>
+
+        <form id="permissionActionForm">
+
+            <label>
+
+                Permission Request ID
+
+            </label>
+
+            <input type="text" id="permissionId">
+
+            <label>
+
+                Decision
+
+            </label>
+
+            <select id="permissionDecision">
+
+                <option value="">
+                    Select Decision
+                </option>
+
+                <option>
+                    Approved
+                </option>
+
+                <option>
+                    Rejected
+                </option>
+
+            </select>
+
+            <label>
+
+                Remarks
+
+            </label>
+
+            <textarea id="permissionRemarks" rows="5"></textarea>
+
+            <button type="submit">
+
+                Submit Decision
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- NOTICE MANAGEMENT -->
+
+    <section>
+
+        <h2>
+            Notice Management
+        </h2>
+
+        <form id="noticeForm">
+
+            <label>
+
+                Notice Title
+
+            </label>
+
+            <input type="text" id="noticeTitle">
+
+            <label>
+
+                Notice Category
+
+            </label>
+
+            <select id="noticeCategory">
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option>
+                    General
+                </option>
+
+                <option>
+                    Maintenance
+                </option>
+
+                <option>
+                    Emergency
+                </option>
+
+                <option>
+                    Sports
+                </option>
+
+                <option>
+                    Mess
+                </option>
+
+                <option>
+                    Event
+                </option>
+
+            </select>
+
+            <label>
+
+                Notice Description
+
+            </label>
+
+            <textarea id="noticeDescription" rows="6"></textarea>
+
+            <button type="submit">
+
+                Publish Notice
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- PUBLISHED NOTICES -->
+
+    <section>
+
+        <h2>
+            Published Notices
+        </h2>
+
+        <div id="publishedNoticeContainer">
+
+            <!-- Dynamic Notices -->
+
+        </div>
+
+    </section>
+
+    <!-- ACTIVITY LOG -->
+
+    <section>
+
+        <h2>
+            Administrative Activity Log
+        </h2>
+
+        <div id="activityLogContainer">
+
+            <!-- Dynamic Activity Log -->
+
+        </div>
+
+    </section>
+
+    <!-- QUICK ACTIONS -->
+
+    <section>
+
+        <h2>
+            Quick Actions
+        </h2>
+
+        <button id="refreshDashboardButton">
+
+            Refresh Dashboard
+
+        </button>
+
+        <button id="logoutButton">
+
+            Logout
+
+        </button>
+
+        <a href="index.html">
+
+            <button type="button">
+
+                Return Home
+
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            Hostel Management System
+
+        </p>
+
+        <p>
+
+            Smart Complaint, Permission & Maintenance Portal
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

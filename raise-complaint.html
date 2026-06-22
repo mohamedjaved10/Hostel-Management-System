@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Raise Complaint | Hostel Management System
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div>
+
+            <h1>
+                Hostel Management System
+            </h1>
+
+            <p>
+                Smart Complaint, Permission & Maintenance Portal
+            </p>
+
+        </div>
+
+        <div id="dateTimeContainer">
+
+        </div>
+
+    </header>
+
+    <!-- NAVIGATION -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="raise-complaint.html">Raise Complaint</a>
+
+        <a href="track-complaints.html">Track Complaint</a>
+
+        <a href="permission-request.html">Permission Request</a>
+
+        <a href="notice-board.html">Notice Board</a>
+
+        <a href="about-hostel.html">About Hostel</a>
+
+        <a href="admin-login.html">Admin Login</a>
+
+    </nav>
+
+    <!-- PAGE TITLE -->
+
+    <section>
+
+        <h2>
+            Complaint Registration Portal
+        </h2>
+
+        <p>
+            Submit complaints regarding hostel facilities, maintenance, cleanliness, security and services.
+        </p>
+
+    </section>
+
+    <!-- COMPLAINT FORM -->
+
+    <section>
+
+        <h2>
+            Raise New Complaint
+        </h2>
+
+        <form id="complaintForm">
+
+            <label for="studentName">
+                Student Name
+            </label>
+
+            <input type="text" id="studentName" required>
+
+            <label for="registerNumber">
+                Register Number
+            </label>
+
+            <input type="text" id="registerNumber" required>
+
+            <label for="roomNumber">
+                Room Number
+            </label>
+
+            <input type="text" id="roomNumber" required>
+
+            <label for="hostelBlock">
+                Hostel Block
+            </label>
+
+            <select id="hostelBlock" required>
+
+                <option value="">
+                    Select Block
+                </option>
+
+                <option>A Block</option>
+                <option>B Block</option>
+                <option>C Block</option>
+                <option>D Block</option>
+
+            </select>
+
+            <label for="phoneNumber">
+                Phone Number
+            </label>
+
+            <input type="tel" id="phoneNumber" required>
+
+            <label for="complaintCategory">
+                Complaint Category
+            </label>
+
+            <select id="complaintCategory" required>
+
+                <option value="">
+                    Select Category
+                </option>
+
+                <option>Electrical Issue</option>
+                <option>Water Supply Issue</option>
+                <option>Furniture Damage</option>
+                <option>Mess Food Complaint</option>
+                <option>WiFi Issue</option>
+                <option>Cleanliness Issue</option>
+                <option>Security Complaint</option>
+                <option>Other</option>
+
+            </select>
+
+            <label for="priorityLevel">
+                Priority Level
+            </label>
+
+            <select id="priorityLevel" required>
+
+                <option value="">
+                    Select Priority
+                </option>
+
+                <option>Low</option>
+                <option>Medium</option>
+                <option>High</option>
+                <option>Emergency</option>
+
+            </select>
+
+            <label for="complaintDate">
+                Complaint Date
+            </label>
+
+            <input type="date" id="complaintDate" required>
+
+            <label for="complaintTime">
+                Complaint Time
+            </label>
+
+            <input type="time" id="complaintTime" required>
+
+            <label for="complaintDescription">
+                Complaint Description
+            </label>
+
+            <textarea id="complaintDescription" rows="6" required>
+            </textarea>
+
+            <label for="complaintAttachment">
+                Upload Evidence
+            </label>
+
+            <input type="file" id="complaintAttachment">
+
+            <br><br>
+
+            <button type="submit">
+                Submit Complaint
+            </button>
+
+            <button type="reset">
+                Clear Form
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- GENERATED COMPLAINT ID -->
+
+    <section>
+
+        <h2>
+            Generated Complaint ID
+        </h2>
+
+        <div id="generatedComplaintId">
+
+            Complaint ID will appear here after submission.
+
+        </div>
+
+    </section>
+
+    <!-- COMPLAINT STATUS -->
+
+    <section>
+
+        <h2>
+            Complaint Status
+        </h2>
+
+        <div id="complaintResponseContainer">
+
+            Complaint status will appear here.
+
+        </div>
+
+    </section>
+
+    <!-- COMPLAINT HISTORY -->
+
+    <section>
+
+        <h2>
+            Complaint History
+        </h2>
+
+        <div id="complaintHistoryContainer">
+
+            No complaints available.
+
+        </div>
+
+    </section>
+
+    <!-- QUICK ACTIONS -->
+
+    <section>
+
+        <h2>
+            Quick Actions
+        </h2>
+
+        <a href="track-complaints.html">
+
+            <button type="button">
+
+                Track Complaint
+
+            </button>
+
+        </a>
+
+        <a href="index.html">
+
+            <button type="button">
+
+                Back To Home
+
+            </button>
+
+        </a>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Hostel Management System
+        </p>
+
+        <p>
+            Smart Complaint, Permission & Maintenance Portal
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
